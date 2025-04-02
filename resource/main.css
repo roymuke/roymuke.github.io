@@ -1,0 +1,67 @@
+/*Main style*/
+:root{
+  --tituloh2:#75cbe6;
+  --tituloh3:#6fa49f;
+  --azul:#0088ff;
+  --rojo:#ff163d;
+  --sizeBorderRad:6px;}
+:root a{/*color:var(--azul);*/color:var(--fuente);text-decoration:underline dotted rgba(0,136,255,.8);}
+@media (prefers-color-scheme:dark){
+:root{
+  --fondo:#00070c;
+  --fondito:repeating-linear-gradient(-46deg,var(--fondo),var(--fondo),black 5px,black 10px);
+  --header:#0e1219;
+  --headerLight:#1f293e;
+  --borderHeaderLight:#384d6f;
+  --base:#161c27;
+  --bordes:#1e2738;
+  --bordes2:#222e40;
+  --bordes3:#2e3e4f;
+  --inner:#334660;
+  --divisorT:#0c0d0f;
+  --divisorB:#1e2f3e;
+  --fuente:#a7b7c5;
+  --fuente2:#506e88;
+  --fuente3:#778ea2;
+  --textShadow:black;
+  --btnBorder:#4f000f;
+  color:var(--fuente);}
+}
+@media (prefers-color-scheme:light){
+:root{
+  --fondo:#005693;
+  --fondito:repeating-linear-gradient(-46deg,var(--fondo),var(--fondo),#8897d2 5px,#8897d2 10px);
+  --header:#ecb17c;
+  --headerLight:#ffd9be;
+  --borderHeaderLight:#e6a287;
+  --base:#ffefca;
+  --bordes:#ae704b;
+  --bordes2:#916544;
+  --bordes3:#8e5831;
+  --inner:#f2caac;
+  --divisorT:#a6715b;
+  --divisorB:#fbd6b0;
+  --fuente:#311500;
+  --fuente2:#886050;
+  --fuente3:#a29677;
+  --textShadow:#ffbe9e;
+  --btnBorder:#9b2f2f;
+  color:var(--fuente);}
+}
+html{font-family:sans-serif,arial,serif;}
+body{background-image:var(--fondito);margin:0 auto;max-width:960px;}
+body.chapter{max-width:initial;}
+/*Header*/
+header{background-color:var(--header);border-bottom:1px solid var(--bordes);margin-bottom:20px;padding:15px 18px;display:flex;justify-content:space-between;align-items:center;background-image:linear-gradient(to bottom,var(--headerLight),var(--header));border-top:1px solid var(--borderHeaderLight);}
+main#inicio{display:flex;align-items:flex-start;}
+header h1{margin:initial;font-family:serif;}
+header nav{text-align:right;}
+header nav a{display:inline-block;border-radius:3px;color:var(--fuente3);}
+header nav a:hover{color:var(--hover);}
+header a #title path, header nav a path{transition:all 0.15s ease-in-out;}
+header a:hover #title path, header nav a:hover svg path{fill:var(--rojo);}
+header a:hover svg{-webkit-filter:drop-shadow(3px 3px 2px rgba(0,0,0,.7));filter:drop-shadow(3px 3px 2px rgba(0,0,0,.7));}
+/*extra for entries/posts*/
+.entry, #posts{border-radius:var(--sizeBorderRad);}
+/*Footer*/
+footer{background:var(--base);border:1px solid var(--bordes);font-size:11px;margin-top:10px;padding:5px;text-shadow:1px 1px 0px var(--textShadow);text-align:center;}

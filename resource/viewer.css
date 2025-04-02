@@ -1,0 +1,13 @@
+#portfolio{display:flex;flex-wrap:wrap;justify-content:center;}
+#portfolio div{margin-bottom:2em;margin-left:5px;margin-right:5px;}
+#portfolio img{border-radius:3px;max-width:200px;}
+#imageModal{
+  display:none;position:absolute;
+  z-index:10;left:0;top:0;width:100%;
+  background-color:rgba(0,0,0,0.8);
+  text-align:center;}
+#expandedImage{margin-top:20px;margin-bottom:20px;max-width:100%;}
+#closeModal{position:absolute;top:15px;right:25px;color:white;font-size:35px;font-weight:bold;cursor:pointer;text-shadow:3px 3px 5px black;}
+#closeModal:hover{color:var(--rojo);}
+.thumbnail{width:150px;cursor:pointer;transition:transform 0.2s;}
+.thumbnail:hover{transform:scale(1.1);}

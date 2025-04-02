@@ -1,0 +1,31 @@
+/*Honey*/
+body > div{text-align:right;}
+div #show_specs{border:1px solid var(--bordes);background-color:var(--base);color:var(--fuente);padding:5px 10px;}
+#show_specs svg{margin-bottom:-3px;}
+#specs{
+  background-color:rgba(0,0,0,.8);
+  border-radius:12px;
+  box-shadow:0 0 10px 5px rgba(0,0,0,0.7);
+  padding:12px 2px;width:262px;
+  display:none;
+  position:absolute;
+  right:calc(50% - 480px);
+  text-align:left;
+  z-index:5;}
+#specs h2{color:var(--tituloh2);font-family:'Times New Roman';font-size:16px;margin-top:initial;text-align:center;}
+#specs h4{
+  background-image:radial-gradient(circle, #212121 90%, transparent 100%);
+  border-bottom:2px dashed #3a3738;
+  border-top:2px dashed #3a3738;
+  color:var(--tituloh3);font-family:'Times New Roman';
+  font-size:14px;margin:0;padding:3px 0;text-align:center;text-shadow:0 0 2px black;}
+/*#specs .hardware{width:326px;}*/
+#specs .hardware td{color:#9c9c9c;font-size:11px;padding:5px 5px 6.5px;-webkit-text-stroke:2px black;paint-order:stroke fill;}
+#specs .hardware td:nth-child(2){color:#e0e6e4;text-align:right;}
+#specs .hardware tr:not(thead tr:first-child){border-bottom:2px dashed var(--bordes);}
+#specs .hardware b{font-weight:initial;}
+#specs .peripheral{margin-top:142px;}
+#specs svg.bi{margin-right:5px;}
+@media screen and (max-width:960px){
+  #specs{right:0;}
+}

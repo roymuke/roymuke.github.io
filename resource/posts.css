@@ -1,0 +1,8 @@
+/*Left aside: news/posts/activity*/
+#posts{background-color:var(--base);font-size:12px;padding:20px 10px;border:1px solid var(--divisorB);outline:1px solid var(--divisorT);margin-right:20px;min-width:180px;width:180px;}
+#posts section:first-child h4{margin-top:initial;}
+#posts h4{background-image:linear-gradient(to right,black,#164257 5%,#164257,transparent);border-top:2px solid #3685ff;border-bottom:2px solid #3685ff;color:#e3e3e3;padding:3px 0;-webkit-text-stroke:2px black;paint-order:stroke fill;margin-left:10px;}
+#posts h4:before{content:'';border:2px solid #3685ff;transform:rotate(45deg);height:3px;width:3px;display:inline-block;position:relative;/*top:-2px;*/left:-10px;margin-right:-3px;}
+#posts hr{border-top:1px solid var(--divisorT);border-bottom:1px solid var(--divisorB);border-right-color:var(--divisorT);border-left-color:var(--divisorT);}
+#posts details ul{margin:10px 0;padding-left:20px;}
+#posts details li{line-height:20px;list-style-type:'📦 ';}
