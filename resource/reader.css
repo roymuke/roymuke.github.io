@@ -8,7 +8,10 @@ header{margin-left:auto;margin-right:auto;max-width:960px;}
 .directory div:not(.ch_select){margin-bottom:40px;}
 .directory a{text-decoration:initial;}
 
-article blockquote{background-color:var(--bordes);border:1px solid var(--bordes3);font-style:italic;margin:initial;padding:10px;}
+.entry.info-manga .content .info b{display:inline-block;width:80px;color:var(--fuente3);}
+.entry.info-manga .info{font-size:11pt;line-height:18pt;}
+
+article blockquote{background-color:var(--bordes);border:1px solid var(--bordes3);font-style:italic;margin:initial;padding:10px;text-align:justify;text-justify:distribute;line-height:16pt;}
 
 .chlist th{border-bottom:1px solid var(--bordes);}
 .chlist td{padding:10px;}
