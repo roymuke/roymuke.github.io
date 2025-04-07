@@ -7,6 +7,7 @@ header{margin-left:auto;margin-right:auto;max-width:960px;}
 .directory .title{color:var(--azul);}
 .directory div:not(.ch_select){margin-bottom:40px;}
 .directory a{text-decoration:initial;}
+.directory a:hover{color:var(--rojo);}
 
 .entry.info-manga .content .info b{display:inline-block;width:80px;color:var(--fuente3);}
 .entry.info-manga .info{font-size:11pt;line-height:18pt;}

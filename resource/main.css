@@ -4,7 +4,10 @@
   --tituloh3:#6fa49f;
   --azul:#0088ff;
   --rojo:#ff163d;
-  --sizeBorderRad:6px;}
+  --sizeBorderRad:6px;
+  color:var(--fuente);
+  scrollbar-color:var(--bordes3) var(--header);
+  scrollbar-width:thin;}
 :root a{/*color:var(--azul);*/color:var(--fuente);text-decoration:underline dotted rgba(0,136,255,.8);}
 @media (prefers-color-scheme:dark){
 :root{
@@ -24,8 +27,7 @@
   --fuente2:#506e88;
   --fuente3:#778ea2;
   --textShadow:black;
-  --btnBorder:#4f000f;
-  color:var(--fuente);}
+  --btnBorder:#4f000f;}
 }
 @media (prefers-color-scheme:light){
 :root{
@@ -45,8 +47,7 @@
   --fuente2:#886050;
   --fuente3:#a29677;
   --textShadow:#ffbe9e;
-  --btnBorder:#9b2f2f;
-  color:var(--fuente);}
+  --btnBorder:#9b2f2f;}
 }
 html{font-family:sans-serif,arial,serif;}
 body{background-image:var(--fondito);margin:0 auto;max-width:960px;}
@@ -58,9 +59,11 @@ header h1{margin:initial;font-family:serif;}
 header nav{text-align:right;}
 header nav a{display:inline-block;border-radius:3px;color:var(--fuente3);}
 header nav a:hover{color:var(--hover);}
-header a #title path, header nav a path{transition:all 0.15s ease-in-out;}
-header a:hover #title path, header nav a:hover svg path{fill:var(--rojo);}
+header a#title path, header nav a path{transition:all 0.15s ease-in-out;}
+header a#title:hover  path, header nav a:hover svg path{fill:var(--rojo);}
 header a:hover svg{-webkit-filter:drop-shadow(3px 3px 2px rgba(0,0,0,.7));filter:drop-shadow(3px 3px 2px rgba(0,0,0,.7));}
+header #title{text-decoration:none;}
+header .lang{background-color:var(--rojo);border-radius:3px;padding:2px 3px;color:white;font-size:11px;position:relative;top:-5px;right:8px;text-shadow:1px 1px 2px black;}
 /*extra for entries/posts*/
 .entry, #posts{border-radius:var(--sizeBorderRad);}
 /*Footer*/
