@@ -1,6 +1,6 @@
 /*Entries*/
 #principal{width:512px;margin:0 auto;}
-.entry{background-color:var(--base);margin:20px 0;padding:5px 20px;box-shadow:inset 0 0 0px 1px var(--inner);outline:3px double var(--bordes2);/*background-image:radial-gradient(farthest-corner at 100% -5%,#1e2637 10%,var(--base) 70%, #101620 80%,var(--base) 90%);*/}
+.entry{background-color:var(--base);margin:20px 0;padding:5px 20px;box-shadow:inset 0 0 0px 1px var(--inner);outline:3px double var(--bordeArticleEntry);/*background-image:radial-gradient(farthest-corner at 100% -5%,#1e2637 10%,var(--base) 70%, #101620 80%,var(--base) 90%);*/}
 .entry:first-child{margin-top:0;}
 .entry::before{
   border-top:1px solid var(--fuente2);
@@ -25,13 +25,21 @@
   border-bottom:8px solid transparent;
   margin-top:5px;position:relative;}
 .entry h4{margin:initial;}
-.entry .cover{background-color:var(--bordes);height:341px;margin-right:20px;float:left;display:flex;align-items:center;}
+.entry .cover{background-color:var(--bordes);height:341px;margin-right:20px;float:left;display:flex;align-items:center;margin-top:8px;outline:3px double var(--fuente2);outline-offset:2px;}
 .entry .cover img{max-width:240px;}
 .entry .content{margin-left:260px;min-height:341px;margin-bottom:20px;}
 .entry .firstch{text-align:right;margin-top:-2.8em;margin-bottom:20px;}
 .entry .firstch button{width:190px;padding:10px 0;}
 .entry a:not(.goto):hover{color:var(--rojo);}
 .entry .chlist a:hover::after{content:' »';}
-a.goto, .goto{background-image:linear-gradient(to bottom,rgb(245,120,120),var(--rojo) 40%,rgb(145,0,20) 55%,rgb(245,0,20));border-radius:3px;border:1px solid #ff5b63;color:white;padding:3px 10px;text-decoration:none;width:90px;display:inline-block;text-align:center;text-shadow:1px 1px 0 black;outline:1px solid var(--btnBorder);}
+a.goto, .goto{background-image:var(--btnFondo);border-radius:3px;border:1px solid #ff5b63;color:white;padding:3px 10px;text-decoration:none;width:90px;display:inline-block;text-align:center;text-shadow:1px 1px 0 black;outline:1px solid var(--btnBorder);}
 .goto:hover{filter:brightness(120%);}
 .goto:active{filter:brightness(80%);}
+@media (prefers-color-scheme:dark){
+:root{
+  --btnFondo:linear-gradient(to bottom,rgb(245,120,120),var(--rojo) 40%,rgb(145,0,20) 55%,rgb(245,0,20));}
+}
+@media (prefers-color-scheme:light){
+:root{
+  --btnFondo:linear-gradient(to bottom, rgb(245, 140, 140), var(--rojo) 40%, rgb(180, 40, 60) 55%, rgb(210, 60, 80));}
+}
