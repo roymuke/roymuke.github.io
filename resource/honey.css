@@ -1,6 +1,6 @@
 /*Honey*/
 body > div{text-align:right;}
-div #show_specs{border:1px solid var(--bordes);background-color:var(--base);color:var(--fuente);padding:5px 10px;}
+#show_specs{border:1px solid var(--bordes);background-color:var(--base);color:var(--fuente);cursor:pointer;padding:5px 10px;}
 #show_specs svg{margin-bottom:-3px;}
 #specs{
   background-color:rgba(0,0,0,.8);
